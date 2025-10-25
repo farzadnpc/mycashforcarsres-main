@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Victoria Cash for Cars | Instant Cash for Scrap Cars Melbourne &amp; Victoria</title>
+  <meta name="description" content="Victoria Cash for Cars pays instant cash for unwanted cars anywhere in Melbourne and across Victoria. Free towing, quick quotes and same-day pickups." />
+  <link rel="canonical" href="https://www.victoriacashforcars.com.au/" />
+  <link rel="icon" href="images/victoria-cash-for-cars.png" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Victoria Cash for Cars" />
+  <meta property="og:title" content="Victoria Cash for Cars | Instant Cash for Scrap Cars Melbourne &amp; Victoria" />
+  <meta property="og:description" content="Sell any unwanted car fast with free towing anywhere in Victoria." />
+  <meta property="og:url" content="https://www.victoriacashforcars.com.au/" />
+  <meta property="og:image" content="https://www.victoriacashforcars.com.au/images/og-cover.jpg" />
+  <meta property="og:locale" content="en_AU" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/styles.css" />
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":["LocalBusiness","AutomotiveBusiness"],
+    "name":"Victoria Cash for Cars",
+    "url":"https://www.victoriacashforcars.com.au",
+    "image":"https://www.victoriacashforcars.com.au/images/victoria-cash-for-cars.png",
+    "telephone":"+61 469 934 580",
+    "areaServed":["Victoria","Melbourne"],
+    "address":{"@type":"PostalAddress","streetAddress":"3 Maxwell St","addressLocality":"Dandenong South","addressRegion":"VIC","postalCode":"3175","addressCountry":"AU"},
+    "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"18:00"}],
+    "offers":{"@type":"Offer","itemOffered":{"@type":"Service","name":"Scrap car removal & vehicle buying","areaServed":"Victoria"}}
+  }
+  </script>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+  <!-- App JS -->
+  <script src="scripts/script.js" defer></script>
+  <script src="scripts/lga.js" defer></script>
+  <script src="scripts/brands.js" defer></script>
+</head>
+<body>
+  <a class="floating-call" href="tel:+61469934580">Call 0469 934 580</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-bar">
+      <a class="brand" href="#top" aria-label="Victoria Cash for Cars home">
+        <span class="brand__mark">VC</span>
+        <span class="brand__text">Victoria Cash for Cars</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#areas">Service areas</a>
+        <a href="#faq">FAQs</a>
+      </nav>
+      <a class="header-call" href="tel:+61469934580">Call 0469 934 580</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Trusted car buyers • Victoria wide</p>
+          <h1>Instant cash for cars with free towing anywhere in Victoria</h1>
+          <p class="hero__sub">We buy unwanted, damaged and unregistered vehicles across Melbourne and regional Victoria. Get a same-day quote, schedule pickup in minutes and receive instant OSKO payment on collection.</p>
+          <ul class="hero__highlights">
+            <li>Top cash offers up to $9,999</li>
+            <li>Licensed recycling &amp; removal team</li>
+            <li>Paperwork help for VicRoads disposal</li>
+          </ul>
+          <div class="hero__actions">
+            <a class="btn btn-primary" href="#quote">Get a fast quote</a>
+            <a class="btn btn-outline" href="tel:+61469934580">Call our buyer</a>
+          </div>
+          <div class="hero__trust">
+            <div>
+              <span class="trust__label">4.9/5</span>
+              <span class="trust__text">Average customer rating</span>
+            </div>
+            <div>
+              <span class="trust__label">3k+</span>
+              <span class="trust__text">Cars purchased since 2016</span>
+            </div>
+            <div>
+              <span class="trust__label">100%</span>
+              <span class="trust__text">Free pickup guaranteed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="quote" id="quote">
+          <h2>Request your offer</h2>
+          <p class="hint">Share a few details and we will call or text you with a price. * required</p>
+          <form id="quote-form" novalidate>
+            <input type="text" name="_hp" id="_hp" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" />
+            <fieldset class="grid">
+              <div>
+                <label for="name">Name *</label>
+                <input id="name" name="name" required autocomplete="name" />
+              </div>
+              <div>
+                <label for="mobile">Mobile *</label>
+                <input id="mobile" name="mobile" required inputmode="tel" autocomplete="tel" placeholder="04xx xxx xxx" pattern="[0-9 +()\-]{8,}" />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" />
+              </div>
+              <div>
+                <label for="suburb">Suburb / Postcode *</label>
+                <input id="suburb" name="suburb" required placeholder="e.g., Dandenong 3175" />
+              </div>
+              <div>
+                <label for="car">Vehicle make / model / year *</label>
+                <input id="car" name="car" required placeholder="Toyota Corolla 2012" />
+              </div>
+              <div>
+                <label for="rego">Rego status *</label>
+                <select id="rego" name="rego" required>
+                  <option value="">Select…</option>
+                  <option>Registered</option>
+                  <option>Unregistered</option>
+                  <option>Written-off</option>
+                </select>
+              </div>
+            </fieldset>
+            <div>
+              <label for="notes">Notes</label>
+              <textarea id="notes" name="notes" rows="3" placeholder="Condition, damage, pickup times"></textarea>
+            </div>
+            <div class="actions">
+              <button class="btn btn-primary" type="submit" id="submitBtn">Send my details</button>
+              <a class="btn btn-ghost" href="tel:+61469934580">Prefer to call?</a>
+            </div>
+            <p id="formStatus" class="hint" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics">
+      <div class="container metrics__grid">
+        <div class="metric">
+          <h3>$9,999</h3>
+          <p>Maximum cash paid for running, damaged and scrap vehicles.</p>
+        </div>
+        <div class="metric">
+          <h3>Same-day</h3>
+          <p>Fast pickups across Melbourne and nearby regional hubs.</p>
+        </div>
+        <div class="metric">
+          <h3>24/7 quotes</h3>
+          <p>Phone, SMS or online – reach us anytime for a fast offer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section--light">
+      <div class="container">
+        <div class="section__head">
+          <h2>We buy every type of vehicle</h2>
+          <p>From commuter cars to commercial fleets, Victoria Cash for Cars makes selling easy.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Scrap &amp; unwanted cars</h3>
+            <p>Broken down, hail damaged or unregistered cars welcome. We handle towing at no cost.</p>
+          </article>
+          <article class="card">
+            <h3>4WDs, vans &amp; utes</h3>
+            <p>Trade-ins rejected? We buy high kilometre work vehicles, vans and 4x4s every day.</p>
+          </article>
+          <article class="card">
+            <h3>Prestige &amp; project cars</h3>
+            <p>Performance, classic and luxury cars – running or not. We arrange discreet pickups.</p>
+          </article>
+          <article class="card">
+            <h3>Damaged &amp; insurance write-offs</h3>
+            <p>Flood, accident or engine failure – get paid instantly without lengthy paperwork.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section section--dark">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <h2>How selling your car works</h2>
+          <p>Four quick steps to turn your unwanted vehicle into instant cash.</p>
+        </div>
+        <ol class="timeline" role="list">
+          <li class="step">
+            <div class="step__number">1</div>
+            <div class="step__body">
+              <h3>Request a quote</h3>
+              <p>Send the form or phone us with your vehicle details for a price in minutes.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__number">2</div>
+            <div class="step__body">
+              <h3>Lock in pickup</h3>
+              <p>Choose a time that suits you – we can often collect the same day anywhere in VIC.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__number">3</div>
+            <div class="step__body">
+              <h3>Instant payment</h3>
+              <p>We pay via secure OSKO transfer or business cheque when we arrive.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__number">4</div>
+            <div class="step__body">
+              <h3>Free towing</h3>
+              <p>Our team loads the vehicle and helps with VicRoads disposal steps on the spot.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--split">
+      <div class="container split">
+        <div>
+          <h2>Why Victoria Cash for Cars?</h2>
+          <ul class="checklist">
+            <li>No hidden charges – towing, paperwork and valuations are all free.</li>
+            <li>Fully licensed motor car trader &amp; recycling professionals.</li>
+            <li>Friendly local support team with real people answering the phone.</li>
+            <li>We buy cars in any condition: running, damaged, deregistered or missing parts.</li>
+            <li>Environmentally responsible dismantling and recycling.</li>
+          </ul>
+        </div>
+        <div class="assurance">
+          <h3>Documents we handle</h3>
+          <p>We guide you through VicRoads disposal notices, transfer paperwork and plates surrender. Bring photo ID and proof of ownership – we take care of the rest.</p>
+          <div class="assurance__callout">
+            <strong>Need to sell fast?</strong>
+            <p>Call <a href="tel:+61469934580">0469 934 580</a> for immediate assistance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="brands" class="section section--accent">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <h2>We buy every brand</h2>
+          <p>From Toyota and Ford to prestige European makes, we accept them all.</p>
+        </div>
+        <div id="brandGrid" class="lga-grid" role="list"></div>
+      </div>
+    </section>
+
+    <section id="areas" class="section section--accent">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <h2>Servicing all Melbourne suburbs &amp; regional Victoria</h2>
+          <p>Explore the councils and suburbs we visit every week. Don’t see yours? Call us and we will arrange pickup.</p>
+        </div>
+        <div id="lgaGrid" class="lga-grid" role="list"></div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="testimonials">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <h2>Happy sellers across Victoria</h2>
+          <p>Real feedback from vehicle owners who sold to Victoria Cash for Cars.</p>
+        </div>
+        <div class="quotes">
+          <figure class="quote-card">
+            <blockquote>“Called in the morning and my old ute was gone by 4pm. Payment cleared while they were still loading it.”</blockquote>
+            <figcaption>— Peter, Geelong</figcaption>
+          </figure>
+          <figure class="quote-card">
+            <blockquote>“Friendly team helped me cancel rego and even took the plates. Best cash price I was offered.”</blockquote>
+            <figcaption>— Alyssa, Dandenong</figcaption>
+          </figure>
+          <figure class="quote-card">
+            <blockquote>“Very professional. They bought our company van fleet and organised pickups after hours.”</blockquote>
+            <figcaption>— Mark, Tullamarine</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section section--faq">
+      <div class="container">
+        <div class="section__head">
+          <h2>Frequently asked questions</h2>
+          <p>Answers to common questions about selling your car for cash.</p>
+        </div>
+        <div class="faq-grid">
+          <article>
+            <h3>What documents do I need?</h3>
+            <p>Bring your driver licence or photo ID and proof of ownership. If the rego is in another name, provide a signed authority. We can supply a receipt and help with VicRoads disposal notices.</p>
+          </article>
+          <article>
+            <h3>How do you pay?</h3>
+            <p>We pay via instant OSKO bank transfer in compliance with Victorian regulations. Business cheque is available on request for commercial sellers.</p>
+          </article>
+          <article>
+            <h3>Do you charge for towing?</h3>
+            <p>No. Towing is free across Melbourne and most regional centres. Remote pickups can be arranged with notice.</p>
+          </article>
+          <article>
+            <h3>Will you buy an unregistered or damaged car?</h3>
+            <p>Absolutely. We specialise in unregistered, accident damaged and non-running vehicles. Tell us about the condition for the best quote.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <h3>Victoria Cash for Cars</h3>
+        <p>Victoria’s trusted cash-for-cars specialists buying vehicles in any condition with free towing and instant payment.</p>
+        <p class="footer-badge">Licensed Motor Car Trader</p>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p><strong>Phone:</strong> <a href="tel:+61469934580">0469 934 580</a></p>
+        <p><strong>Email:</strong> <a href="mailto:nasirnajib1@gmail.com">nasirnajib1@gmail.com</a></p>
+        <p><strong>Address:</strong> 1 Maxwell St, Dandenong South VIC 3175</p>
+        <p><strong>Hours:</strong> Mon–Sat 08:00–18:00</p>
+      </div>
+      <div class="footer-map">
+        <h3>Find us</h3>
+        <iframe title="Victoria Cash for Cars location" src="https://www.google.com/maps?q=1%20Maxwell%20St,%20Dandenong%20South%20VIC%203175&output=embed" width="100%" height="220" style="border:0;border-radius:12px" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Victoria Cash for Cars. All rights reserved.</p>
+  </footer>
+</body>
+</html>
