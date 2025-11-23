@@ -11,7 +11,7 @@
   
       // EmailJS
       if (window.emailjs && typeof emailjs.init === 'function') {
-        try { emailjs.init({ publicKey: '-NZcQAN4ItYp9mRtu' }); } catch(e) { console.warn('EmailJS init failed', e); }
+        try { emailjs.init({ publicKey: 'pn1OHOXo__NVPRYbg' }); } catch(e) { console.warn('EmailJS init failed', e); }
       } else {
         console.warn('EmailJS SDK not found.');
       }
@@ -35,11 +35,10 @@
           email: document.getElementById('email').value.trim(),
           suburb: document.getElementById('suburb').value.trim(),
           car: document.getElementById('car').value.trim(),
-          rego: document.getElementById('rego').value,
           notes: document.getElementById('notes').value.trim()
         };
   
-        if (!data.name || !data.mobile || !data.car || !data.suburb || !data.rego) {
+        if (!data.name || !data.mobile || !data.car || !data.suburb) {
           if (status) status.textContent = 'Please fill in all required fields.';
           return;
         }
@@ -48,11 +47,18 @@
           if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Sending…'; }
           if (status) status.textContent = 'Sending your details…';
   
-          var SERVICE_ID = 'service_elffr9m';
-          var TEMPLATE_ID = 'template_015hpab';
+          var SERVICE_ID = 'service_uxf5qhk';
+          var TEMPLATE_ID = 'template_bo114a2';
   
           if (window.emailjs && emailjs.send) {
-            await emailjs.send(SERVICE_ID, TEMPLATE_ID, data);
+            await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+              name: data.name,
+              mobile: data.mobile,
+              email: data.email,
+              suburb: data.suburb,
+              car: data.car,
+              notes: data.notes
+            });
             if (status) status.textContent = "Thanks! We'll contact you shortly.";
             form.reset();
           } else {
