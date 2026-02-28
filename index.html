@@ -18,10 +18,13 @@
   <meta property="og:image" content="https://www.victoriacashforcars.com.au/images/og-cover.jpg" />
   <meta property="og:locale" content="en_AU" />
 
-  <!-- Styles -->
+  <!-- Google Fonts: Oswald (bold display) + Source Sans 3 (readable body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="styles/styles.css" />
 
-  <!-- JSON-LD structured data -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -37,57 +40,57 @@
   }
   </script>
 
-  <!-- EmailJS SDK -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
-  <!-- App JS -->
   <script src="scripts/scripts.js" defer></script>
   <script src="scripts/lga.js" defer></script>
   <script src="scripts/brands.js" defer></script>
 </head>
 <body>
-  <a class="floating-call" href="tel:+61469934580">Call 0469 934 580</a>
 
-<header class="site-header" id="top">
+  <!-- Mobile floating call button -->
+  <a class="floating-call" href="tel:+61469934580">📞 Call 0469 934 580</a>
+
+  <!-- ===========================
+       HEADER
+  ============================ -->
+  <header class="site-header" id="top">
     <div class="container header-bar">
-      
-      <a class="brand" href="index.html" aria-label="Vic Cash 4 Cars Home">
-        <img src="images/vic-cash-for-car.jpeg" alt="Vic Cash 4 Cars Logo" class="main-logo" />
+
+      <a href="index.html" aria-label="Victoria Cash for Cars Home">
+        <img src="images/vic-cash-for-car.png" alt="Vic Cash 4 Cars Logo" class="main-logo" />
       </a>
-      
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-  
+
       <nav class="primary-nav" id="primary-menu">
         <ul class="nav-links">
+
           <li><a href="index.html">Home</a></li>
-          
+
           <li class="has-dropdown">
-            <a href="#">Services ▼</a>
+            <a href="#">Services ▾</a>
             <div class="dropdown mega-menu">
               <ul>
-                <li><strong>Cash for Cars</strong></li>
+                <li><strong class="menu-cat">Cash for Cars</strong></li>
                 <li><a href="cash-for-cars.html">Cash for Cars Victoria</a></li>
                 <li><a href="sell-my-car.html">Sell My Car Fast</a></li>
                 <li><a href="car-valuation.html">Instant Car Valuation</a></li>
                 <li><a href="cash-for-old-cars.html">Cash for Old Cars</a></li>
               </ul>
               <ul>
-                <li><strong>Car Removal</strong></li>
+                <li><strong class="menu-cat">Car Removal</strong></li>
                 <li><a href="scrap-car-removal.html">Scrap Car Removal</a></li>
                 <li><a href="free-towing.html">Free Car Towing</a></li>
                 <li><a href="junk-car-collection.html">Junk Car Collection</a></li>
                 <li><a href="accident-car-removal.html">Accident Car Removal</a></li>
               </ul>
               <ul>
-                <li><strong>Auto Wrecking</strong></li>
+                <li><strong class="menu-cat">Auto Wrecking</strong></li>
                 <li><a href="auto-wreckers.html">Auto Wreckers</a></li>
                 <li><a href="commercial-wreckers.html">Commercial Wreckers</a></li>
                 <li><a href="used-parts.html">Used Auto Parts</a></li>
                 <li><a href="recycling.html">Eco Recycling</a></li>
               </ul>
               <ul>
-                <li><strong>Vehicle Types</strong></li>
+                <li><strong class="menu-cat">Vehicle Types</strong></li>
                 <li><a href="cash-for-trucks.html">Truck Wreckers</a></li>
                 <li><a href="cash-for-vans.html">Van Wreckers</a></li>
                 <li><a href="4x4-wreckers.html">4x4 Wreckers</a></li>
@@ -95,74 +98,83 @@
               </ul>
             </div>
           </li>
-  
+
           <li class="has-dropdown">
-            <a href="#">Car Wreckers ▼</a>
+            <a href="#">Car Wreckers ▾</a>
             <div class="dropdown mega-menu">
               <ul>
-                <li><a href="toyota.html">Toyota</a></li>
-                <li><a href="nissan.html">Nissan</a></li>
-                <li><a href="mazda.html">Mazda</a></li>
-                <li><a href="honda.html">Honda</a></li>
-                <li><a href="subaru.html">Subaru</a></li>
+                <li><a href="toyota.html">Toyota Wreckers</a></li>
+                <li><a href="suzuki.html">Suzuki Wreckers</a></li>
+                <li><a href="honda.html">Honda Wreckers</a></li>
+                <li><a href="hyundai.html">Hyundai Wreckers</a></li>
+                <li><a href="proton.html">Proton Wreckers</a></li>
+                <li><a href="volvo.html">Volvo Wreckers</a></li>
+                <li><a href="saab.html">Saab Wreckers</a></li>
               </ul>
               <ul>
-                <li><a href="mitsubishi.html">Mitsubishi</a></li>
-                <li><a href="suzuki.html">Suzuki</a></li>
-                <li><a href="bmw.html">BMW</a></li>
-                <li><a href="mercedes.html">Mercedes</a></li>
-                <li><a href="audi.html">Audi</a></li>
+                <li><a href="nissan.html">Nissan Wreckers</a></li>
+                <li><a href="volkswagen.html">Volkswagen Wreckers</a></li>
+                <li><a href="holden.html">Holden Wreckers</a></li>
+                <li><a href="kia.html">KIA Wreckers</a></li>
+                <li><a href="citroen.html">Citroen Wreckers</a></li>
+                <li><a href="fiat.html">Fiat Wreckers</a></li>
+                <li><a href="skoda.html">Skoda Wreckers</a></li>
               </ul>
               <ul>
-                <li><a href="volkswagen.html">Volkswagen</a></li>
-                <li><a href="volvo.html">Volvo</a></li>
-                <li><a href="porsche.html">Porsche</a></li>
-                <li><a href="skoda.html">Skoda</a></li>
-                <li><a href="saab.html">Saab</a></li>
+                <li><a href="mazda.html">Mazda Wreckers</a></li>
+                <li><a href="audi.html">Audi Wreckers</a></li>
+                <li><a href="ford.html">Ford Wreckers</a></li>
+                <li><a href="subaru.html">Subaru Wreckers</a></li>
+                <li><a href="daewoo.html">Daewoo Wreckers</a></li>
+                <li><a href="porsche.html">Porsche Wreckers</a></li>
+                <li><a href="ssangyong.html">Ssangyong Wreckers</a></li>
               </ul>
               <ul>
-                <li><a href="ssangyong.html">Ssangyong</a></li>
-                <li><a href="daihatsu.html">Daihatsu</a></li>
-                <li><a href="proton.html">Proton</a></li>
-                <li><a href="daewoo.html">Daewoo</a></li>
-                <li><a href="alfa-romeo.html">Alfa Romeo</a></li>
+                <li><a href="lexus.html">Lexus Wreckers</a></li>
+                <li><a href="bmw.html">BMW Wreckers</a></li>
+                <li><a href="mitsubishi.html">Mitsubishi Wreckers</a></li>
+                <li><a href="dodge.html">Dodge Wreckers</a></li>
+                <li><a href="daihatsu.html">Daihatsu Wreckers</a></li>
+                <li><a href="mercedes.html">Mercedes Wreckers</a></li>
+                <li><a href="alfa-romeo.html">Alfa Romeo Wreckers</a></li>
               </ul>
             </div>
           </li>
-  
+
           <li class="has-dropdown">
-            <a href="#">Locations ▼</a>
+            <a href="#">Locations ▾</a>
             <div class="dropdown mega-menu">
               <ul>
-                <li><a href="dandenong.html">Dandenong</a></li>
-                <li><a href="frankston.html">Frankston</a></li>
-                <li><a href="werribee.html">Werribee</a></li>
-                <li><a href="sunshine.html">Sunshine</a></li>
-                <li><a href="geelong.html">Geelong</a></li>
-                <li><a href="springvale.html">Springvale</a></li>
-                <li><a href="keysborough.html">Keysborough</a></li>
-                <li><a href="noble-park.html">Noble Park</a></li>
-                <li><a href="clayton.html">Clayton</a></li>
-                <li><a href="moorabbin.html">Moorabbin</a></li>
+                <li><a href="campbellfield.html">Campbellfield</a></li>
+                <li><a href="somerton.html">Somerton</a></li>
+                <li><a href="epping.html">Epping</a></li>
+                <li><a href="craigieburn.html">Craigieburn</a></li>
+                <li><a href="tullamarine.html">Tullamarine</a></li>
                 <li><a href="reservoir.html">Reservoir</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="lalor.html">Lalor</a></li>
+                <li><a href="thomastown.html">Thomastown</a></li>
+                <li><a href="coburg.html">Coburg</a></li>
+                <li><a href="brunswick.html">Brunswick</a></li>
               </ul>
               <ul>
-                <li><a href="preston.html">Preston</a></li>
-                <li><a href="thomastown.html">Thomastown</a></li>
-                <li><a href="epping.html">Epping</a></li>
-                <li><a href="lalor.html">Lalor</a></li>
+                <li><a href="dandenong.html">Dandenong</a></li>
+                <li><a href="springvale.html">Springvale</a></li>
+                <li><a href="clayton.html">Clayton</a></li>
+                <li><a href="keysborough.html">Keysborough</a></li>
+                <li><a href="noble-park.html">Noble Park</a></li>
+                <li><a href="brighton.html">Brighton</a></li>
+                <li><a href="st-kilda.html">St Kilda</a></li>
+                <li><a href="moorabbin.html">Moorabbin</a></li>
+                <li><a href="cheltenham.html">Cheltenham</a></li>
+                <li><a href="frankston.html">Frankston</a></li>
+                <li><a href="mornington.html">Mornington</a></li>
+              </ul>
+              <ul>
                 <li><a href="pakenham.html">Pakenham</a></li>
                 <li><a href="cranbourne.html">Cranbourne</a></li>
                 <li><a href="narre-warren.html">Narre Warren</a></li>
                 <li><a href="berwick.html">Berwick</a></li>
-                <li><a href="mornington.html">Mornington</a></li>
-                <li><a href="campbellfield.html">Campbellfield</a></li>
-                <li><a href="somerton.html">Somerton</a></li>
-              </ul>
-              <ul>
-                <li><a href="craigieburn.html">Craigieburn</a></li>
-                <li><a href="tullamarine.html">Tullamarine</a></li>
-                <li><a href="brunswick.html">Brunswick</a></li>
                 <li><a href="ringwood.html">Ringwood</a></li>
                 <li><a href="bayswater.html">Bayswater</a></li>
                 <li><a href="lilydale.html">Lilydale</a></li>
@@ -170,310 +182,380 @@
                 <li><a href="ferntree-gully.html">Ferntree Gully</a></li>
                 <li><a href="box-hill.html">Box Hill</a></li>
                 <li><a href="glen-waverley.html">Glen Waverley</a></li>
-                <li><a href="braybrook.html">Braybrook</a></li>
               </ul>
               <ul>
+                <li><a href="sunshine.html">Sunshine</a></li>
+                <li><a href="braybrook.html">Braybrook</a></li>
                 <li><a href="laverton.html">Laverton</a></li>
                 <li><a href="altona.html">Altona</a></li>
                 <li><a href="point-cook.html">Point Cook</a></li>
+                <li><a href="werribee.html">Werribee</a></li>
                 <li><a href="hoppers-crossing.html">Hoppers Crossing</a></li>
                 <li><a href="melton.html">Melton</a></li>
                 <li><a href="deer-park.html">Deer Park</a></li>
-                <li><a href="st-kilda.html">St Kilda</a></li>
-                <li><a href="cheltenham.html">Cheltenham</a></li>
+                <li><a href="geelong.html">Geelong</a></li>
                 <li><a href="ballarat.html">Ballarat</a></li>
-                <li><a href="coburg.html">Coburg</a></li>
               </ul>
             </div>
           </li>
-  
+
           <li><a href="blog.html">Blog</a></li>
-  
+
           <li class="has-dropdown">
-            <a href="#">Contact Us ▼</a>
+            <a href="#">Contact ▾</a>
             <ul class="dropdown">
               <li><a href="index.html#contact">Visit Our Yard</a></li>
               <li><a href="tel:+61469934580">Call: 0469 934 580</a></li>
-              <li><a href="mailto:nasirnajib1@gmail.com">Email Us</a></li>
+              <li><a href="/cdn-cgi/l/email-protection#b3ddd2c0dac1ddd2d9dad182f3d4ded2dadf9dd0dcde">Email Us</a></li>
             </ul>
           </li>
-  
-          <li><a href="tel:+61469934580" class="btn-primary-header">Call: 0469 934 580</a></li>
+
+          <li><a href="tel:+61469934580" class="btn-nav-cta">📞 0469 934 580</a></li>
+
         </ul>
       </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
   <main>
+
+    <!-- ===========================
+         HERO + QUOTE FORM
+    ============================ -->
     <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <p class="hero__eyebrow">Trusted car buyers • Victoria wide</p>
-          <h1>Instant cash for cars with free towing anywhere in Victoria</h1>
-          <p class="hero__sub">We buy unwanted, damaged and unregistered vehicles across Melbourne and regional Victoria. Get a same-day quote, schedule pickup in minutes and receive instant OSKO or PayID payment on collection.</p>
-          <ul class="hero__highlights">
-            <li>Top cash offers up to $9,999</li>
+      <div class="container hero-grid">
+
+        <!-- Left: Content -->
+        <div class="hero-content">
+          <p class="eyebrow">Trusted car buyers · Victoria wide</p>
+          <h1>Instant cash for your<br>unwanted car</h1>
+          <p class="hero-sub">We buy any vehicle — running or not — across Melbourne and regional Victoria. Same-day quotes, free towing, and instant OSKO payment on collection.</p>
+          <ul class="hero-list">
+            <li>Top offers up to <strong>$9,999</strong></li>
             <li>Licensed recycling &amp; removal team</li>
-            <li>Paperwork help for VicRoads disposal</li>
+            <li>VicRoads paperwork handled for you</li>
           </ul>
-          <div class="hero__actions">
-            <a class="btn btn-primary" href="#quote">Get a fast quote</a>
-            <a class="btn btn-outline" href="tel:+61469934580">Call our buyer</a>
+          <div class="hero-btns">
+            <a class="btn btn-teal" href="#quote">Get a free quote</a>
+            <a class="btn btn-outline-white" href="tel:+61469934580">Call our buyer</a>
           </div>
-          <div class="hero__trust">
-            <div>
-              <span class="trust__label">4.9/5</span>
-              <span class="trust__text">Average customer rating</span>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num">$9,999</span>
+              <span class="stat-label">Max cash paid</span>
             </div>
-            <div>
-              <span class="trust__label">3k+</span>
-              <span class="trust__text">Cars purchased since 2016</span>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">3,000+</span>
+              <span class="stat-label">Cars bought since 2016</span>
             </div>
-            <div>
-              <span class="trust__label">100%</span>
-              <span class="trust__text">Free pickup guaranteed</span>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">4.9 ★</span>
+              <span class="stat-label">Customer rating</span>
             </div>
           </div>
         </div>
 
-        <div class="quote" id="quote">
-          <h2>Request your offer</h2>
-          <p class="hint">Share a few details and we will call or text you with a price. * required</p>
-          <form id="quote-form" novalidate>
+        <!-- Right: Quote Form -->
+        <div class="quote-box" id="quote">
+          <div class="quote-box-header">
+            <h2>Request your free offer</h2>
+            <p>We'll call or text with a price — usually within the hour.</p>
+          </div>
+          <form id="quote-form" novalidate class="qform">
+            <!-- Honeypot -->
             <input type="text" name="_hp" id="_hp" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" />
-            <fieldset class="grid">
-              <div>
-                <label for="name">Name *</label>
-                <input id="name" name="name" required autocomplete="name" />
+
+            <div class="field-row">
+              <div class="field">
+                <label for="name">Name <span class="req">*</span></label>
+                <input id="name" name="name" type="text" required autocomplete="name" placeholder="John Smith" />
               </div>
-              <div>
-                <label for="mobile">Mobile *</label>
-                <input id="mobile" name="mobile" required inputmode="tel" autocomplete="tel" placeholder="04xx xxx xxx" pattern="[0-9 +()\-]{8,}" />
+              <div class="field">
+                <label for="mobile">Mobile <span class="req">*</span></label>
+                <input id="mobile" name="mobile" type="tel" required inputmode="tel" autocomplete="tel" placeholder="04xx xxx xxx" />
               </div>
-              <div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
                 <label for="email">Email</label>
-                <input id="email" name="email" type="email" autocomplete="email" />
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" />
               </div>
-              <div>
-                <label for="suburb">Suburb / Postcode *</label>
-                <input id="suburb" name="suburb" required placeholder="e.g., Dandenong 3175" />
+              <div class="field">
+                <label for="suburb">Suburb / Postcode <span class="req">*</span></label>
+                <input id="suburb" name="suburb" type="text" required placeholder="e.g. Dandenong 3175" />
               </div>
-              <div>
-                <label for="car">Vehicle make / model / year *</label>
-                <input id="car" name="car" required placeholder="Toyota Corolla 2012" />
-              </div>
-            </fieldset>
-            <div>
-              <label for="notes">Notes</label>
-              <textarea id="notes" name="notes" rows="3" placeholder="Condition, damage, pickup times"></textarea>
             </div>
-            <div class="actions">
-              <button class="btn btn-primary" type="submit" id="submitBtn">Send my details</button>
-              <a class="btn btn-ghost" href="tel:+61469934580">Prefer to call?</a>
+
+            <div class="field">
+              <label for="car">Vehicle Make / Model / Year <span class="req">*</span></label>
+              <input id="car" name="car" type="text" required placeholder="e.g. Toyota Corolla 2012" />
             </div>
-            <p id="formStatus" class="hint" role="status" aria-live="polite"></p>
+
+            <div class="field">
+              <label for="notes">Additional Notes</label>
+              <textarea id="notes" name="notes" rows="3" placeholder="Condition, damage, preferred pickup times…"></textarea>
+            </div>
+
+            <button class="btn btn-teal btn-block" type="submit" id="submitBtn">Send my details</button>
+            <a class="form-call-alt" href="tel:+61469934580">Prefer to call? 0469 934 580</a>
+
+            <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
+
       </div>
     </section>
 
-    <section class="metrics">
-      <div class="container metrics__grid">
+    <!-- ===========================
+         TRUST BAR
+    ============================ -->
+    <section class="trust-bar">
+      <div class="container trust-bar-grid">
+        <div class="trust-pill">✔ Free towing anywhere in VIC</div>
+        <div class="trust-pill">✔ Same-day pickup available</div>
+        <div class="trust-pill">✔ Instant OSKO / PayID payment</div>
+        <div class="trust-pill">✔ Licensed motor car trader</div>
+      </div>
+    </section>
+
+    <!-- ===========================
+         METRICS
+    ============================ -->
+    <section class="metrics-bar">
+      <div class="container metrics-grid">
         <div class="metric">
-          <h3>$9,999</h3>
-          <p>Maximum cash paid for running, damaged and scrap vehicles.</p>
+          <span class="metric-num">$9,999</span>
+          <span class="metric-label">Maximum cash offer</span>
         </div>
         <div class="metric">
-          <h3>Same-day</h3>
-          <p>Fast pickups across Melbourne and nearby regional hubs.</p>
+          <span class="metric-num">Same day</span>
+          <span class="metric-label">Pickup across Melbourne</span>
         </div>
         <div class="metric">
-          <h3>24/7 quotes</h3>
-          <p>Phone, SMS or online – reach us anytime for a fast offer.</p>
+          <span class="metric-num">24 / 7</span>
+          <span class="metric-label">Quotes by phone or online</span>
+        </div>
+        <div class="metric">
+          <span class="metric-num">3,000+</span>
+          <span class="metric-label">Vehicles bought since 2016</span>
         </div>
       </div>
     </section>
 
-    <section id="services" class="section section--light">
+    <!-- ===========================
+         SERVICES
+    ============================ -->
+    <section id="services" class="section">
       <div class="container">
-        <div class="section__head">
+        <div class="section-head">
           <h2>We buy every type of vehicle</h2>
-          <p>From commuter cars to commercial fleets, Victoria Cash for Cars makes selling easy.</p>
+          <p>From commuter cars to commercial fleets — if it has wheels, we'll make an offer.</p>
         </div>
-        <div class="cards">
+        <div class="card-grid">
           <article class="card">
-            <h3>Scrap &amp; unwanted cars</h3>
-            <p>Broken down, hail damaged or unregistered cars welcome. We handle towing at no cost.</p>
+            <div class="card-icon">🚗</div>
+            <h3>Scrap &amp; Unwanted Cars</h3>
+            <p>Broken down, hail damaged or unregistered — collected at no cost to you.</p>
           </article>
           <article class="card">
-            <h3>4WDs, vans &amp; utes</h3>
-            <p>Trade-ins rejected? We buy high kilometre work vehicles, vans and 4x4s every day.</p>
+            <div class="card-icon">🚐</div>
+            <h3>4WDs, Vans &amp; Utes</h3>
+            <p>High-kilometre work vehicles bought every day, no questions asked.</p>
           </article>
           <article class="card">
-            <h3>Prestige &amp; project cars</h3>
-            <p>Performance, classic and luxury cars – running or not. We arrange discreet pickups.</p>
+            <div class="card-icon">🏎️</div>
+            <h3>Prestige &amp; Project Cars</h3>
+            <p>Performance, classic and luxury cars — running or not. Discreet pickups available.</p>
           </article>
           <article class="card">
-            <h3>Damaged &amp; insurance write-offs</h3>
-            <p>Flood, accident or engine failure – get paid instantly without lengthy paperwork.</p>
+            <div class="card-icon">💥</div>
+            <h3>Damaged &amp; Write-offs</h3>
+            <p>Flood, crash or engine failure — paid instantly, minimal paperwork.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="process" class="section section--dark">
+    <!-- ===========================
+         HOW IT WORKS
+    ============================ -->
+    <section id="process" class="section section-dark">
       <div class="container">
-        <div class="section__head section__head--center">
+        <div class="section-head section-head-light">
           <h2>How selling your car works</h2>
-          <p>Four quick steps to turn your unwanted vehicle into instant cash.</p>
+          <p>Four quick steps to turn your vehicle into instant cash.</p>
         </div>
-        <ol class="timeline" role="list">
+        <ol class="steps" role="list">
           <li class="step">
-            <div class="step__number">1</div>
-            <div class="step__body">
-              <h3>Request a quote</h3>
-              <p>Send the form or phone us with your vehicle details for a price in minutes.</p>
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h3>Request a Quote</h3>
+              <p>Submit the form or call us — get a firm price in minutes.</p>
             </div>
           </li>
           <li class="step">
-            <div class="step__number">2</div>
-            <div class="step__body">
-              <h3>Lock in pickup</h3>
-              <p>Choose a time that suits you – we can often collect the same day anywhere in VIC.</p>
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h3>Lock In Pickup</h3>
+              <p>Choose a time that suits — same-day collection often available anywhere in VIC.</p>
             </div>
           </li>
           <li class="step">
-            <div class="step__number">3</div>
-            <div class="step__body">
-              <h3>Instant payment</h3>
-              <p>We pay via secure OSKO transfer or Pay ID when we arrive.</p>
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <h3>Instant Payment</h3>
+              <p>OSKO or PayID transfer the moment we arrive at your door.</p>
             </div>
           </li>
           <li class="step">
-            <div class="step__number">4</div>
-            <div class="step__body">
-              <h3>Free towing</h3>
-              <p>Our team loads the vehicle and helps with VicRoads disposal steps on the spot.</p>
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <h3>Free Towing</h3>
+              <p>We load up and help with VicRoads disposal on the spot.</p>
             </div>
           </li>
         </ol>
       </div>
     </section>
 
-    <section class="section section--split">
+    <!-- ===========================
+         WHY US
+    ============================ -->
+    <section class="section section-light">
       <div class="container split">
-        <div>
+        <div class="split-text">
           <h2>Why Victoria Cash for Cars?</h2>
           <ul class="checklist">
-            <li>No hidden charges – towing, paperwork and valuations are all free.</li>
+            <li>No hidden charges — towing, paperwork and valuations are free.</li>
             <li>Fully licensed motor car trader &amp; recycling professionals.</li>
-            <li>Friendly local support team with real people answering the phone.</li>
-            <li>We buy cars in any condition: running, damaged, deregistered or missing parts.</li>
+            <li>Real people answering the phone — no bots, no call centres.</li>
+            <li>We buy in any condition: running, damaged or deregistered.</li>
             <li>Environmentally responsible dismantling and recycling.</li>
           </ul>
         </div>
         <div class="assurance">
           <h3>Documents we handle</h3>
-          <p>We guide you through VicRoads disposal notices, transfer paperwork and plates surrender. Bring photo ID and proof of ownership – we take care of the rest.</p>
-          <div class="assurance__callout">
+          <p>We guide you through VicRoads disposal notices, transfer paperwork and plates surrender. Bring photo ID and proof of ownership — we take care of the rest.</p>
+          <div class="assurance-cta">
             <strong>Need to sell fast?</strong>
-            <p>Call <a href="tel:+61469934580">0469 934 580</a> for immediate assistance.</p>
+            <a href="tel:+61469934580" class="btn btn-teal btn-sm">Call 0469 934 580</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="brands" class="section section--accent">
+    <!-- ===========================
+         BRANDS
+    ============================ -->
+    <section id="brands" class="section section-tint">
       <div class="container">
-        <div class="section__head section__head--center">
+        <div class="section-head">
           <h2>We buy every brand</h2>
-          <p>From Toyota and Ford to prestige European makes, we accept them all.</p>
+          <p>From Toyota and Ford to prestige European makes — all accepted.</p>
         </div>
         <div id="brandGrid" class="lga-grid" role="list"></div>
       </div>
     </section>
 
-    <section id="areas" class="section section--accent">
+    <!-- ===========================
+         AREAS
+    ============================ -->
+    <section id="areas" class="section section-tint">
       <div class="container">
-        <div class="section__head section__head--center">
+        <div class="section-head">
           <h2>Servicing all Melbourne suburbs &amp; regional Victoria</h2>
-          <p>Explore the councils and suburbs we visit every week. Don’t see yours? Call us and we will arrange pickup.</p>
+          <p>Don't see your suburb? Call us and we'll arrange pickup.</p>
         </div>
         <div id="lgaGrid" class="lga-grid" role="list"></div>
       </div>
     </section>
 
-    <section class="section section--light" id="testimonials">
+    <!-- ===========================
+         TESTIMONIALS
+    ============================ -->
+    <section class="section section-dark" id="testimonials">
       <div class="container">
-        <div class="section__head section__head--center">
+        <div class="section-head section-head-light">
           <h2>Happy sellers across Victoria</h2>
-          <p>Real feedback from vehicle owners who sold to Victoria Cash for Cars.</p>
         </div>
-        <div class="quotes">
-          <figure class="quote-card">
-            <blockquote>“Called in the morning and my old ute was gone by 4pm. Payment cleared while they were still loading it.”</blockquote>
+        <div class="testimonials">
+          <figure class="testimonial">
+            <blockquote>"Called in the morning and my old ute was gone by 4pm. Payment cleared while they were still loading it."</blockquote>
             <figcaption>— Peter, Geelong</figcaption>
           </figure>
-          <figure class="quote-card">
-            <blockquote>“Friendly team helped me cancel rego and even took the plates. Best cash price I was offered.”</blockquote>
+          <figure class="testimonial">
+            <blockquote>"Friendly team helped me cancel rego and even took the plates. Best cash price I was offered."</blockquote>
             <figcaption>— Alyssa, Dandenong</figcaption>
           </figure>
-          <figure class="quote-card">
-            <blockquote>“Very professional. They bought our company van fleet and organised pickups after hours.”</blockquote>
+          <figure class="testimonial">
+            <blockquote>"Very professional. They bought our company van fleet and organised pickups after hours."</blockquote>
             <figcaption>— Mark, Tullamarine</figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <section id="faq" class="section section--faq">
+    <!-- ===========================
+         FAQ
+    ============================ -->
+    <section id="faq" class="section">
       <div class="container">
-        <div class="section__head">
+        <div class="section-head">
           <h2>Frequently asked questions</h2>
-          <p>Answers to common questions about selling your car for cash.</p>
         </div>
         <div class="faq-grid">
-          <article>
+          <article class="faq-item">
             <h3>What documents do I need?</h3>
-            <p>Bring your driver licence or photo ID and proof of ownership. If the rego is in another name, provide a signed authority. We can supply a receipt and help with VicRoads disposal notices.</p>
+            <p>Bring your driver's licence and proof of ownership. If rego is in another name, a signed authority is needed. We supply a receipt and help with VicRoads disposal notices.</p>
           </article>
-          <article>
+          <article class="faq-item">
             <h3>How do you pay?</h3>
-            <p>We pay via instant OSKO bank transfer in compliance with Victorian regulations. Business cheque is available on request for commercial sellers.</p>
+            <p>We pay via instant OSKO bank transfer in compliance with Victorian regulations. Business cheque available on request for commercial sellers.</p>
           </article>
-          <article>
-            <h3>Do you charge for towing?</h3>
-            <p>No. Towing is free across Melbourne and most regional centres. Remote pickups can be arranged with notice.</p>
+          <article class="faq-item">
+            <h3>Is towing really free?</h3>
+            <p>Yes — always. Free across Melbourne and most regional centres. Remote pickups arranged with notice.</p>
           </article>
-          <article>
+          <article class="faq-item">
             <h3>Will you buy an unregistered or damaged car?</h3>
-            <p>Absolutely. We specialise in unregistered, accident damaged and non-running vehicles. Tell us about the condition for the best quote.</p>
+            <p>Absolutely. We specialise in unregistered, accident-damaged and non-running vehicles. Tell us the condition for the best quote.</p>
           </article>
         </div>
       </div>
     </section>
+
   </main>
 
-  <footer class="site-footer">
+  <!-- ===========================
+       FOOTER
+  ============================ -->
+  <footer class="site-footer" id="contact">
     <div class="container footer-grid">
-      <div class="footer-about">
+      <div class="footer-col">
         <h3>Vic Cash 4 Cars</h3>
-        <p>Victoria’s trusted cash-for-cars specialists buying vehicles in any condition with free towing and instant payment.</p>
-        <p class="footer-badge">Licensed Motor Car Trader</p>
+        <p>Victoria's trusted cash-for-cars specialists — free towing, instant payment, any condition.</p>
+        <span class="footer-badge">Licensed Motor Car Trader</span>
       </div>
-      <div class="footer-contact">
+      <div class="footer-col">
         <h3>Contact</h3>
         <p><strong>Phone:</strong> <a href="tel:+61469934580">0469 934 580</a></p>
-        <p><strong>Email:</strong> <a href="mailto:nasirnajib1@gmail.com">nasirnajib1@gmail.com</a></p>
+        <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#5a343b293328343b3033386b1a3d373b333674393537"><span class="__cf_email__" data-cfemail="503e312339223e313a39326110373d31393c7e333f3d">[email&#160;protected]</span></a></p>
         <p><strong>Address:</strong> 1 Maxwell St, Dandenong South VIC 3175</p>
-        <p><strong>Hours:</strong> Mon–Sat 08:00–18:00</p>
+        <p><strong>Hours:</strong> Mon–Sat 8:00am – 6:00pm</p>
       </div>
-      <div class="footer-map">
-        <h3>Find us</h3>
-        <iframe title="Vic Cash 4 Cars location" src="https://maps.google.com/maps?q=1%20Maxwell%20St,%20Dandenong%20South%20VIC%203175&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="220" style="border:0;border-radius:12px" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-    <p class="footer-copy">© <span id="year">2026</span> Vic Cash 4 Cars. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+      <div class="footer-col">
+        <h3>Find Us</h3>
+        <iframe
+          title="Vic Cash 4 Cars location"
+          src="https://maps.google.com/maps?q=1%20Maxwell%20St,%20Dandenong%20South%20VIC%203175&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          width="100%" height="200"
+          style="border:0;border-radius:8px"
+          allowfullscreen loading="lazy"
+          referrerpolicy="no-referrer-when-
