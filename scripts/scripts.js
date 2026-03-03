@@ -128,37 +128,43 @@
     });
 
 
-    /* ============================================================
+/* ============================================================
        5. LOCATION AUTO-FILL
        Populates suburb field from URL slug on location pages.
        ============================================================ */
-    var CORE_PAGES = new Set([
-      '', 'index', 'blog', 'contact',
-      'cash for cars', 'sell my car', 'car valuation',
-      'cash for old cars', 'scrap car removal', 'free towing',
-      'junk car collection', 'accident car removal', 'auto wreckers',
-      'commercial wreckers', 'used parts', 'recycling',
-      'cash for trucks', 'cash for vans', '4x4 wreckers', 'ute wreckers'
-    ]);
-
-    var suburbInput = document.getElementById('suburb');
-    if (suburbInput) {
-      var pageName = window.location.pathname
-        .split('/')
-        .pop()
-        .replace('.html', '')
-        .replace(/-/g, ' ')
-        .toLowerCase();
-
-      if (pageName && !CORE_PAGES.has(pageName)) {
-        var autoValue = pageName.replace(/\b\w/g, function (l) {
-          return l.toUpperCase();
-        });
-        suburbInput.value        = autoValue;
-        suburbInput._autoValue   = autoValue;   // preserved after form.reset()
+       var CORE_PAGES = new Set([
+        '', 'index', 'blog', 'contact',
+        'cash for cars', 'sell my car', 'car valuation',
+        'cash for old cars', 'scrap car removal', 'free towing',
+        'junk car collection', 'accident car removal', 'auto wreckers',
+        'commercial wreckers', 'used parts', 'recycling',
+        'cash for trucks', 'cash for vans', '4x4 wreckers', 'ute wreckers',
+        
+        // CAR BRANDS ADDED HERE SO THEY DO NOT AUTO-FILL THE SUBURB FIELD
+        'toyota', 'suzuki', 'honda', 'hyundai', 'proton', 'volvo', 'saab',
+        'nissan', 'volkswagen', 'holden', 'kia', 'citroen', 'fiat', 'skoda',
+        'mazda', 'audi', 'ford', 'subaru', 'daewoo', 'porsche', 'ssangyong',
+        'lexus', 'bmw', 'mitsubishi', 'dodge', 'daihatsu', 'mercedes', 'alfa romeo'
+      ]);
+  
+      var suburbInput = document.getElementById('suburb');
+      if (suburbInput) {
+        var pageName = window.location.pathname
+          .split('/')
+          .pop()
+          .replace('.html', '')
+          .replace(/-/g, ' ')
+          .toLowerCase();
+  
+        // Only auto-fill if it's NOT a core page and NOT a car brand
+        if (pageName && !CORE_PAGES.has(pageName)) {
+          var autoValue = pageName.replace(/\b\w/g, function (l) {
+            return l.toUpperCase();
+          });
+          suburbInput.value        = autoValue;
+          suburbInput._autoValue   = autoValue;   // preserved after form.reset()
+        }
       }
-    }
-
 
     /* ============================================================
        6. EMAILJS INITIALISATION

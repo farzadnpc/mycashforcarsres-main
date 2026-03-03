@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hyundai Wreckers Victoria | Cash For Hyundai Cars | Used Parts</title>
-  <meta name="description" content="Get top cash for your Hyundai. Vic Cash 4 Cars offers expert Hyundai wrecking, eco-friendly recycling, and genuine used Hyundai parts with free Victoria-wide towing." />
+  <title>Hyundai Wreckers Victoria | Cash For Hyundai Cars | Genuine Parts</title>
+  <meta name="description" content="Sell your unwanted Hyundai for top cash. Vic Cash 4 Cars offers expert Hyundai wrecking, eco-friendly recycling, and genuine used parts with free towing." />
   <link rel="canonical" href="https://www.victoriacashforcars.com.au/hyundai.html" />
   <link rel="icon" href="images/victoria-cash-for-cars.png" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
@@ -18,13 +18,13 @@
   <script src="scripts/scripts.js" defer></script>
 
   <style>
-    .hyundai-services { display: grid; gap: 30px; margin: 50px 0; }
-    @media (min-width: 768px) { .hyundai-services { grid-template-columns: repeat(3, 1fr); } }
-    .h-card { background: #f8fafc; border: 1px solid #e2e8f0; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s; }
-    .h-card:hover { transform: translateY(-5px); }
-    .h-card h3 { color: #0f172a; margin-bottom: 15px; font-family: 'Oswald', sans-serif; }
-    .h-models { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px; margin-top: 30px; }
-    .h-model-item { background: #fff; border-left: 4px solid #14b8a6; padding: 10px 15px; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    .brand-services { display: grid; gap: 30px; margin: 50px 0; }
+    @media (min-width: 768px) { .brand-services { grid-template-columns: repeat(3, 1fr); } }
+    .brand-card { background: #f8fafc; border: 1px solid #e2e8f0; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s; }
+    .brand-card:hover { transform: translateY(-5px); border-color: #14b8a6; }
+    .brand-card h3 { color: #0f172a; margin-bottom: 15px; font-family: 'Oswald', sans-serif; }
+    .brand-models { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px; margin-top: 30px; }
+    .brand-model-item { background: #fff; border-left: 4px solid #14b8a6; padding: 10px 15px; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
     .img-placeholder-box { background: #e2e8f0; display: flex; align-items: center; justify-content: center; border-radius: 12px; border: 3px dashed #94a3b8; color: #475569; font-weight: bold; text-align: center; padding: 20px; font-size: 1.1rem; }
     .img-placeholder-wide { aspect-ratio: 21/9; margin: 40px 0; }
     .img-placeholder-square { aspect-ratio: 1/1; width: 100%; }
@@ -79,32 +79,60 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-content">
-          <p class="eyebrow">Hyundai Specialists in Victoria</p>
-          <h1>Hyundai Wreckers: Cash, Recycling & Genuine Parts</h1>
-          <p class="hero-sub">Don't let your broken Hyundai i30 or Tucson sit and rust. We pay instant cash for all Hyundai vehicles, provide eco-friendly auto wrecking, and supply affordable genuine used parts.</p>
+          <p class="eyebrow">Local Hyundai Specialists</p>
+          <h1>Hyundai Wreckers: Cash, Auto Recycling & Genuine Parts</h1>
+          <p class="hero-sub">Don't let your broken i30, Tucson, or Santa Fe sit and rust. We pay instant cash for all Hyundai vehicles, provide eco-friendly auto wrecking, and supply affordable genuine used parts across Victoria.</p>
           <ul class="hero-list">
             <li>Instant Cash, PayID, or OSKO payments up to <strong>$9,999</strong></li>
-            <li>100% Free towing for your Hyundai</li>
+            <li>100% Free towing for your Hyundai vehicle</li>
           </ul>
         </div>
+        
         <div class="quote-box" id="quote">
-          <div class="quote-box-header"><h2>Get a Hyundai Quote</h2></div>
+          <div class="quote-box-header">
+            <h2>Request your free offer</h2>
+            <p>We'll call or text with a price — usually within the hour.</p>
+          </div>
           <form id="quote-form" novalidate class="qform">
             <input type="text" name="_hp" id="_hp" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off" />
+
             <div class="field-row">
-              <div class="field"><label>Name *</label><input id="name" name="name" required /></div>
-              <div class="field"><label>Mobile *</label><input id="mobile" name="mobile" required type="tel" /></div>
+              <div class="field">
+                <label for="name">Name <span class="req">*</span></label>
+                <input id="name" name="name" type="text" required autocomplete="name" />
+              </div>
+              <div class="field">
+                <label for="mobile">Mobile <span class="req">*</span></label>
+                <input id="mobile" name="mobile" type="tel" required inputmode="tel" autocomplete="tel" placeholder="04xx xxx xxx" />
+              </div>
             </div>
+
             <div class="field-row">
-              <div class="field"><label>Email</label><input id="email" name="email" type="email" /></div>
-              <div class="field"><label>Suburb *</label><input id="suburb" name="suburb" required /></div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" />
+              </div>
+              <div class="field">
+                <label for="suburb">Suburb / Postcode <span class="req">*</span></label>
+                <input id="suburb" name="suburb" type="text" required placeholder="e.g. Richmond" />
+              </div>
             </div>
-            <div class="field"><label>Hyundai Model & Year *</label><input id="car" name="car" required placeholder="e.g. Hyundai Santa Fe 2014" /></div>
-            <div class="field"><label>Notes</label><textarea id="notes" name="notes" rows="2"></textarea></div>
-            <button class="btn btn-teal btn-block" type="submit" id="submitBtn">Get My Cash Offer</button>
-            <p id="formStatus" class="form-status" role="status"></p>
+
+            <div class="field">
+              <label for="car">Vehicle Make / Model / Year <span class="req">*</span></label>
+              <input id="car" name="car" type="text" required placeholder="e.g. Hyundai i30 2016" />
+            </div>
+
+            <div class="field">
+              <label for="notes">Additional Notes</label>
+              <textarea id="notes" name="notes" rows="3" placeholder="Condition, damage, preferred pickup times…"></textarea>
+            </div>
+
+            <button class="btn btn-teal btn-block" type="submit" id="submitBtn">Send my details</button>
+            <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
+
       </div>
     </section>
 
@@ -114,23 +142,23 @@
           <h2>Our Complete Hyundai Solutions</h2>
           <p>From earning cash to helping the environment, we do it all.</p>
         </div>
-        <div class="hyundai-services">
-          <article class="h-card">
+        <div class="brand-services">
+          <article class="brand-card">
             <h3>Cash For Hyundai Cars</h3>
-            <p>Ready to sell your Hyundai in Victoria? Whether it's running smoothly or completely dead, we offer highly competitive cash for Hyundai cars. Stop dealing with time-wasters. We provide on-the-spot payouts via <strong>Cash, PayID, or OSKO</strong> directly to your account before we even tow the vehicle.</p>
+            <p>Ready to sell your Hyundai in Victoria? Because of their massive popularity, Hyundai parts are highly valuable. We offer highly competitive cash for Hyundai cars, providing on-the-spot payouts via <strong>Cash, PayID, or OSKO</strong> directly to your account before towing.</p>
           </article>
-          <article class="h-card">
+          <article class="brand-card">
             <h3>Expert Hyundai Wreckers</h3>
-            <p>As specialized Hyundai wreckers, we know the exact worth of your vehicle's salvageable components. From blown engines in an Elantra to transmission faults in a Santa Fe, our wrecking team carefully dismantles your car to extract maximum value, ensuring you get the highest possible quote.</p>
+            <p>As specialized Hyundai wreckers, we know the exact worth of your vehicle's components. From DCT transmission issues in a Tucson to engine faults in an Accent, we carefully dismantle your car to extract maximum salvage value.</p>
           </article>
-          <article class="h-card">
+          <article class="brand-card">
             <h3>Hyundai Auto Recycling</h3>
-            <p>We take our environmental responsibility seriously. When you hand over your scrap vehicle, we perform rigorous Hyundai car recycling. We safely drain all hazardous fluids, degas air conditioning units, and crush the remaining steel frame to be repurposed, keeping toxic waste out of Victorian landfills.</p>
+            <p>We take environmental responsibility seriously. When you hand over your scrap Hyundai, we perform rigorous car recycling. We safely drain hazardous fluids, degas air conditioning, and crush the remaining steel frame to be repurposed.</p>
           </article>
         </div>
         
         <div class="img-placeholder-box img-placeholder-wide">
-          <span>[PLACEHOLDER: Insert wide photo of Hyundai vehicles in a wrecking yard here]</span>
+          <span>[PLACEHOLDER: Insert wide photo of a Hyundai being loaded onto a truck or dismantled here]</span>
         </div>
       </div>
     </section>
@@ -141,22 +169,22 @@
           <h2>Hyundai Models We Buy & Salvage</h2>
           <p>We pay cash for every single make and model under the Hyundai badge.</p>
         </div>
-        <div class="h-models">
-          <div class="h-model-item">Hyundai i30</div>
-          <div class="h-model-item">Hyundai Tucson</div>
-          <div class="h-model-item">Hyundai Santa Fe</div>
-          <div class="h-model-item">Hyundai Elantra</div>
-          <div class="h-model-item">Hyundai Accent</div>
-          <div class="h-model-item">Hyundai Kona</div>
-          <div class="h-model-item">Hyundai Sonata</div>
-          <div class="h-model-item">Hyundai Veloster</div>
-          <div class="h-model-item">Hyundai i20</div>
-          <div class="h-model-item">Hyundai Getz</div>
-          <div class="h-model-item">Hyundai iLoad</div>
-          <div class="h-model-item">Hyundai iMax</div>
-          <div class="h-model-item">Hyundai Palisade</div>
-          <div class="h-model-item">Hyundai Ioniq</div>
-          <div class="h-model-item">Hyundai Venue</div>
+        <div class="brand-models">
+          <div class="brand-model-item">Hyundai i30</div>
+          <div class="brand-model-item">Hyundai Tucson</div>
+          <div class="brand-model-item">Hyundai Santa Fe</div>
+          <div class="brand-model-item">Hyundai Elantra</div>
+          <div class="brand-model-item">Hyundai Accent</div>
+          <div class="brand-model-item">Hyundai Kona</div>
+          <div class="brand-model-item">Hyundai Sonata</div>
+          <div class="brand-model-item">Hyundai Veloster</div>
+          <div class="brand-model-item">Hyundai i20</div>
+          <div class="brand-model-item">Hyundai Getz</div>
+          <div class="brand-model-item">Hyundai iLoad</div>
+          <div class="brand-model-item">Hyundai iMax</div>
+          <div class="brand-model-item">Hyundai Palisade</div>
+          <div class="brand-model-item">Hyundai Ioniq</div>
+          <div class="brand-model-item">Hyundai Venue</div>
         </div>
       </div>
     </section>
@@ -165,23 +193,22 @@
       <div class="container split-row">
         <div>
           <h2>Affordable Genuine Hyundai Parts</h2>
-          <p>Looking for a replacement alternator for your i30 or a door panel for your Tucson? Don't pay dealership prices. Because we dismantle hundreds of vehicles, we stock a massive inventory of <strong>genuine used Hyundai parts</strong>.</p>
+          <p>Don't pay massive markups at the dealership. Because we actively dismantle hundreds of vehicles, we stock a huge inventory of <strong>genuine used Hyundai parts</strong>.</p>
           <ul class="checklist" style="margin: 20px 0;">
-            <li><strong>Engines & Transmissions:</strong> Tested and verified mechanical parts.</li>
-            <li><strong>Body Panels:</strong> Doors, bonnets, bumpers, and side mirrors.</li>
-            <li><strong>Electrical Components:</strong> Alternators, starter motors, and head units.</li>
+            <li><strong>Engines & Transmissions:</strong> Tested mechanical parts for i30s, Tucsons, and Santa Fes.</li>
+            <li><strong>Body Panels:</strong> Doors, bonnets, bumpers, grilles, and side mirrors.</li>
+            <li><strong>Electrical Components:</strong> Alternators, starter motors, and infotainment screens.</li>
             <li><strong>Interior Pieces:</strong> Seats, steering wheels, and dashboard trims.</li>
           </ul>
-          <p>Buying recycled genuine Hyundai parts saves you money and reduces manufacturing emissions. Call our parts department today to check our current inventory!</p>
+          <p>Buying recycled genuine Hyundai parts saves you money and keeps your beloved car on the road longer. Call our parts department today!</p>
         </div>
         <div>
           <div class="img-placeholder-box img-placeholder-square">
-            <span>[PLACEHOLDER: Insert photo of a mechanic holding a Hyundai part, or a shelf of Hyundai engines here]</span>
+            <span>[PLACEHOLDER: Insert photo of a mechanic holding a Hyundai part, or a shelf of engines here]</span>
           </div>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer" id="contact">
