@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.victoriacashforcars.com.au/sitemap
+Sitemap: https://www.victoriacashforcars.com.au/sitemap.xml
