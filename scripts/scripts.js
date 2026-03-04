@@ -280,25 +280,27 @@ document.addEventListener("DOMContentLoaded", function() {
   
   doubleTapLinks.forEach(function(link) {
     link.addEventListener('click', function(e) {
-      var parentLi = this.parentElement;
       
-      // If the dropdown is NOT open yet, stop the link from changing the page and open the menu
-      if (!parentLi.classList.contains('open')) {
-        e.preventDefault(); 
+      // ONLY apply the "click to open" rule on tablets and phones!
+      if (window.innerWidth <= 1023) {
+        var parentLi = this.parentElement;
         
-        // Close any other open nested menus to keep things tidy
-        document.querySelectorAll('.has-nested-dropdown.open').forEach(function(li) {
-          if (li !== parentLi) li.classList.remove('open');
-        });
-        
-        // Open this menu
-        parentLi.classList.add('open');
+        if (!parentLi.classList.contains('open')) {
+          e.preventDefault(); // Stop navigation
+          
+          // Close other open menus
+          document.querySelectorAll('.has-nested-dropdown.open').forEach(function(li) {
+            if (li !== parentLi) li.classList.remove('open');
+          });
+          
+          // Open this menu
+          parentLi.classList.add('open');
+        }
       }
-      // If it IS already open, the script does nothing, and the browser naturally goes to the page!
     });
   });
 
-  // Clean up nested menus if the user moves their mouse away entirely (Desktop)
+  // Clean up nested menus if the user moves their mouse away (Desktop)
   var mainServicesMenu = document.querySelector('.has-dropdown');
   if(mainServicesMenu) {
     mainServicesMenu.addEventListener('mouseleave', function() {
