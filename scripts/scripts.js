@@ -275,3 +275,32 @@
   });
 
 })();
+document.addEventListener("DOMContentLoaded", function() {
+  // Find all our special double-tap links
+  var doubleTapLinks = document.querySelectorAll('.double-tap-link');
+  
+  doubleTapLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      
+      // We only want this double-click logic on Mobile devices
+      if (window.innerWidth <= 991) {
+        var parentLi = this.parentElement;
+        
+        // If the nested menu is NOT open yet:
+        if (!parentLi.classList.contains('open')) {
+          e.preventDefault(); // Stop the link from taking us to the new page
+          
+          // Close any other open nested menus to keep it neat
+          document.querySelectorAll('.has-nested-dropdown').forEach(function(li) {
+            li.classList.remove('open');
+          });
+          
+          // Open this specific nested menu
+          parentLi.classList.add('open');
+        }
+        // If the menu IS already open, do nothing! 
+        // The browser will naturally follow the link to "cash-for-cars.html"
+      }
+    });
+  });
+});

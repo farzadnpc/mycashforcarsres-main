@@ -1,143 +1,181 @@
 <!doctype html>
 <html lang="en-AU">
 <head>
- 
-
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-  <title>Auto Wrecking News & Tips | Victoria Used Parts Blog</title>
-  <meta name="description" content="Read the latest advice on selling your car, finding used auto parts, and vehicle recycling in Melbourne. Expert tips from Victoria Used Parts." />
-  
-  <link rel="canonical" href="https://www.victoriausedparts.com.au/blog" />
-  <link rel="icon" type="image/svg+xml" href="images/victoria-used-parts.png" />
-  <meta name="robots" content="index,follow,max-image-preview:large" />
-  
+  <title>Auto Wrecking & Car Sales Blog | Vic Cash 4 Cars</title>
+  <meta name="description" content="Read the latest news, tips, and guides on getting the most cash for your scrap car, auto recycling, and buying genuine used parts in Victoria." />
+  <link rel="canonical" href="https://www.victoriacashforcars.com.au/blog.html" />
+  <link rel="icon" href="images/victoria-cash-for-cars.png" />
+  <meta name="robots" content="index,follow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/styles.css" />
 
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
-  <script src="scripts/script.js" defer></script>
-  <script src="scripts/brands.js?v=4" defer></script>  
+  <script src="scripts/scripts.js" defer></script>
+
+  <style>
+    .blog-header { background: #f8fafc; padding: 80px 20px 60px 20px; text-align: center; border-bottom: 1px solid #e2e8f0; }
+    .blog-header h1 { font-family: 'Oswald', sans-serif; font-size: 3rem; color: #0f172a; margin-bottom: 15px; }
+    .blog-header p { font-size: 1.1rem; color: #475569; max-width: 700px; margin: 0 auto; line-height: 1.6; }
+
+    .blog-grid { display: grid; gap: 40px; margin: 60px 0; }
+    @media (min-width: 768px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .blog-grid { grid-template-columns: repeat(3, 1fr); } }
+
+    .blog-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; display: flex; flex-direction: column; }
+    .blog-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); border-color: #14b8a6; }
+    
+    .blog-img-box { background: #e2e8f0; height: 220px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #e2e8f0; color: #64748b; font-weight: bold; text-align: center; padding: 20px; }
+    
+    .blog-content { padding: 30px; display: flex; flex-direction: column; flex-grow: 1; }
+    .blog-meta { display: flex; justify-content: space-between; font-size: 0.85rem; color: #64748b; margin-bottom: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+    .blog-category { color: #14b8a6; }
+    
+    .blog-card h2 { font-family: 'Oswald', sans-serif; font-size: 1.5rem; color: #0f172a; margin-bottom: 15px; line-height: 1.3; }
+    .blog-card p { color: #475569; margin-bottom: 20px; line-height: 1.6; flex-grow: 1; }
+    
+    .read-more { display: inline-block; font-weight: 700; color: #14b8a6; text-decoration: none; border-bottom: 2px solid transparent; transition: border-color 0.2s; padding-bottom: 2px; align-self: flex-start; }
+    .read-more:hover { border-bottom-color: #14b8a6; color: #0f172a; }
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
 
+  <a class="floating-call" href="tel:+61469934580">📞 Call 0469 934 580</a>
+
+   <!-- ===========================
+       HEADER
+  ============================ -->
   <header class="site-header" id="top">
     <div class="container header-bar">
-      
-      <a class="brand" href="index.html" aria-label="Vic Cash 4 Cars Home">
-        <img src="images/vic-cash-for-car.jpeg" alt="Vic Cash 4 Cars Logo" class="main-logo" />
+
+      <a href="index.html" aria-label="Victoria Cash for Cars Home">
+        <img src="images/vic-cash-for-car.png" alt="Vic Cash 4 Cars Logo" class="main-logo" />
       </a>
-      
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-  
+
       <nav class="primary-nav" id="primary-menu">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           
           <li class="has-dropdown">
-            <a href="#">Services ▼</a>
+            <a href="#">Services ▾</a>
+            <ul class="dropdown custom-services-menu">
+              
+              <li class="has-nested-dropdown">
+                <a href="cash-for-cars.html" class="double-tap-link">Cash For Cars <span class="arrow">›</span></a>
+                <ul class="nested-dropdown-menu">
+                  <li><a href="cash-for-trucks.html">Cash for Trucks</a></li>
+                  <li><a href="cash-for-4x4.html">Cash for 4x4</a></li>
+                  <li><a href="cash-for-utes.html">Cash for Utes</a></li>
+                  <li><a href="cash-for-vans.html">Cash for Vans</a></li>
+                </ul>
+              </li>
+
+              <li class="has-nested-dropdown">
+                <a href="car-removal.html" class="double-tap-link">Car Removal <span class="arrow">›</span></a>
+                <ul class="nested-dropdown-menu">
+                  <li><a href="truck-removal.html">Truck Removal</a></li>
+                </ul>
+              </li>
+
+              <li><a href="sell-my-car.html">Sell My Car</a></li>
+
+              <li class="has-nested-dropdown">
+                <a href="truck-wreckers.html" class="double-tap-link">Truck Wreckers <span class="arrow">›</span></a>
+                <ul class="nested-dropdown-menu">
+                  <li><a href="isuzu-wreckers.html">Isuzu Wreckers</a></li>
+                  <li><a href="hino-wreckers.html" >Hino Wreckers</a></li>
+                  <li><a href="ford-truck-wreckers.html">Ford Truck Wreckers</a></li>
+                  <li><a href="mitsubishi-truck-wreckers.html">Mitsubishi Truck Wreckers</a></li>
+                  <li><a href="nissan-truck-wreckers.html">Nissan Truck Wreckers</a></li>
+                  <li><a href="mercedes-truck-wreckers.html">Mercedes-Benz Truck Wreckers</a></li>
+                  <li><a href="volvo-truck-wreckers.html">Volvo Truck Wreckers</a></li>
+                </ul>
+              </li>
+
+              <li><a href="used-parts.html">Used Auto Parts</a></li>
+
+            </ul>
+          </li>
+          
+          <li class="has-dropdown">
+            <a href="#">Car Wreckers ▾</a>
             <div class="dropdown mega-menu">
               <ul>
-                <li><strong>Cash for Cars</strong></li>
-                <li><a href="cash-for-cars.html">Cash for Cars Victoria</a></li>
-                <li><a href="sell-my-car.html">Sell My Car Fast</a></li>
-                <li><a href="car-valuation.html">Instant Car Valuation</a></li>
-                <li><a href="cash-for-old-cars.html">Cash for Old Cars</a></li>
+                <li><a href="toyota.html">Toyota Wreckers</a></li>
+                <li><a href="suzuki.html">Suzuki Wreckers</a></li>
+                <li><a href="honda.html">Honda Wreckers</a></li>
+                <li><a href="hyundai.html">Hyundai Wreckers</a></li>
+                <li><a href="proton.html">Proton Wreckers</a></li>
+                <li><a href="volvo.html">Volvo Wreckers</a></li>
+                <li><a href="saab.html">Saab Wreckers</a></li>
               </ul>
               <ul>
-                <li><strong>Car Removal</strong></li>
-                <li><a href="scrap-car-removal.html">Scrap Car Removal</a></li>
-                <li><a href="free-towing.html">Free Car Towing</a></li>
-                <li><a href="junk-car-collection.html">Junk Car Collection</a></li>
-                <li><a href="accident-car-removal.html">Accident Car Removal</a></li>
+                <li><a href="nissan.html">Nissan Wreckers</a></li>
+                <li><a href="volkswagen.html">Volkswagen Wreckers</a></li>
+                <li><a href="holden.html">Holden Wreckers</a></li>
+                <li><a href="kia.html">KIA Wreckers</a></li>
+                <li><a href="citroen.html">Citroen Wreckers</a></li>
+                <li><a href="fiat.html">Fiat Wreckers</a></li>
+                <li><a href="skoda.html">Skoda Wreckers</a></li>
               </ul>
               <ul>
-                <li><strong>Auto Wrecking</strong></li>
-                <li><a href="auto-wreckers.html">Auto Wreckers</a></li>
-                <li><a href="commercial-wreckers.html">Commercial Wreckers</a></li>
-                <li><a href="used-parts.html">Used Auto Parts</a></li>
-                <li><a href="recycling.html">Eco Recycling</a></li>
+                <li><a href="mazda.html">Mazda Wreckers</a></li>
+                <li><a href="audi.html">Audi Wreckers</a></li>
+                <li><a href="ford.html">Ford Wreckers</a></li>
+                <li><a href="subaru.html">Subaru Wreckers</a></li>
+                <li><a href="daewoo.html">Daewoo Wreckers</a></li>
+                <li><a href="porsche.html">Porsche Wreckers</a></li>
+                <li><a href="ssangyong.html">Ssangyong Wreckers</a></li>
               </ul>
               <ul>
-                <li><strong>Vehicle Types</strong></li>
-                <li><a href="cash-for-trucks.html">Truck Wreckers</a></li>
-                <li><a href="cash-for-vans.html">Van Wreckers</a></li>
-                <li><a href="4x4-wreckers.html">4x4 Wreckers</a></li>
-                <li><a href="ute-wreckers.html">Ute Wreckers</a></li>
+                <li><a href="lexus.html">Lexus Wreckers</a></li>
+                <li><a href="bmw.html">BMW Wreckers</a></li>
+                <li><a href="mitsubishi.html">Mitsubishi Wreckers</a></li>
+                <li><a href="dodge.html">Dodge Wreckers</a></li>
+                <li><a href="daihatsu.html">Daihatsu Wreckers</a></li>
+                <li><a href="mercedes.html">Mercedes Wreckers</a></li>
+                <li><a href="alfa-romeo.html">Alfa Romeo Wreckers</a></li>
               </ul>
             </div>
           </li>
-  
+
           <li class="has-dropdown">
-            <a href="#">Car Wreckers ▼</a>
+            <a href="#">Locations ▾</a>
             <div class="dropdown mega-menu">
               <ul>
-                <li><a href="toyota.html">Toyota</a></li>
-                <li><a href="nissan.html">Nissan</a></li>
-                <li><a href="mazda.html">Mazda</a></li>
-                <li><a href="honda.html">Honda</a></li>
-                <li><a href="subaru.html">Subaru</a></li>
+                <li><a href="campbellfield.html">Campbellfield</a></li>
+                <li><a href="somerton.html">Somerton</a></li>
+                <li><a href="epping.html">Epping</a></li>
+                <li><a href="craigieburn.html">Craigieburn</a></li>
+                <li><a href="tullamarine.html">Tullamarine</a></li>
+                <li><a href="reservoir.html">Reservoir</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="lalor.html">Lalor</a></li>
+                <li><a href="thomastown.html">Thomastown</a></li>
+                <li><a href="coburg.html">Coburg</a></li>
+                <li><a href="brunswick.html">Brunswick</a></li>
               </ul>
-              <ul>
-                <li><a href="mitsubishi.html">Mitsubishi</a></li>
-                <li><a href="suzuki.html">Suzuki</a></li>
-                <li><a href="bmw.html">BMW</a></li>
-                <li><a href="mercedes.html">Mercedes</a></li>
-                <li><a href="audi.html">Audi</a></li>
-              </ul>
-              <ul>
-                <li><a href="volkswagen.html">Volkswagen</a></li>
-                <li><a href="volvo.html">Volvo</a></li>
-                <li><a href="porsche.html">Porsche</a></li>
-                <li><a href="skoda.html">Skoda</a></li>
-                <li><a href="saab.html">Saab</a></li>
-              </ul>
-              <ul>
-                <li><a href="ssangyong.html">Ssangyong</a></li>
-                <li><a href="daihatsu.html">Daihatsu</a></li>
-                <li><a href="proton.html">Proton</a></li>
-                <li><a href="daewoo.html">Daewoo</a></li>
-                <li><a href="alfa-romeo.html">Alfa Romeo</a></li>
-              </ul>
-            </div>
-          </li>
-  
-          <li class="has-dropdown">
-            <a href="#">Locations ▼</a>
-            <div class="dropdown mega-menu">
               <ul>
                 <li><a href="dandenong.html">Dandenong</a></li>
-                <li><a href="frankston.html">Frankston</a></li>
-                <li><a href="werribee.html">Werribee</a></li>
-                <li><a href="sunshine.html">Sunshine</a></li>
-                <li><a href="geelong.html">Geelong</a></li>
                 <li><a href="springvale.html">Springvale</a></li>
+                <li><a href="clayton.html">Clayton</a></li>
                 <li><a href="keysborough.html">Keysborough</a></li>
                 <li><a href="noble-park.html">Noble Park</a></li>
-                <li><a href="clayton.html">Clayton</a></li>
+                <li><a href="brighton.html">Brighton</a></li>
+                <li><a href="st-kilda.html">St Kilda</a></li>
                 <li><a href="moorabbin.html">Moorabbin</a></li>
-                <li><a href="reservoir.html">Reservoir</a></li>
+                <li><a href="cheltenham.html">Cheltenham</a></li>
+                <li><a href="frankston.html">Frankston</a></li>
+                <li><a href="mornington.html">Mornington</a></li>
               </ul>
               <ul>
-                <li><a href="preston.html">Preston</a></li>
-                <li><a href="thomastown.html">Thomastown</a></li>
-                <li><a href="epping.html">Epping</a></li>
-                <li><a href="lalor.html">Lalor</a></li>
                 <li><a href="pakenham.html">Pakenham</a></li>
                 <li><a href="cranbourne.html">Cranbourne</a></li>
                 <li><a href="narre-warren.html">Narre Warren</a></li>
                 <li><a href="berwick.html">Berwick</a></li>
-                <li><a href="mornington.html">Mornington</a></li>
-                <li><a href="campbellfield.html">Campbellfield</a></li>
-                <li><a href="somerton.html">Somerton</a></li>
-              </ul>
-              <ul>
-                <li><a href="craigieburn.html">Craigieburn</a></li>
-                <li><a href="tullamarine.html">Tullamarine</a></li>
-                <li><a href="brunswick.html">Brunswick</a></li>
                 <li><a href="ringwood.html">Ringwood</a></li>
                 <li><a href="bayswater.html">Bayswater</a></li>
                 <li><a href="lilydale.html">Lilydale</a></li>
@@ -145,145 +183,140 @@
                 <li><a href="ferntree-gully.html">Ferntree Gully</a></li>
                 <li><a href="box-hill.html">Box Hill</a></li>
                 <li><a href="glen-waverley.html">Glen Waverley</a></li>
-                <li><a href="braybrook.html">Braybrook</a></li>
               </ul>
               <ul>
+                <li><a href="sunshine.html">Sunshine</a></li>
+                <li><a href="braybrook.html">Braybrook</a></li>
                 <li><a href="laverton.html">Laverton</a></li>
                 <li><a href="altona.html">Altona</a></li>
                 <li><a href="point-cook.html">Point Cook</a></li>
+                <li><a href="werribee.html">Werribee</a></li>
                 <li><a href="hoppers-crossing.html">Hoppers Crossing</a></li>
                 <li><a href="melton.html">Melton</a></li>
                 <li><a href="deer-park.html">Deer Park</a></li>
-                <li><a href="st-kilda.html">St Kilda</a></li>
-                <li><a href="cheltenham.html">Cheltenham</a></li>
+                <li><a href="geelong.html">Geelong</a></li>
                 <li><a href="ballarat.html">Ballarat</a></li>
-                <li><a href="coburg.html">Coburg</a></li>
               </ul>
             </div>
           </li>
-  
           <li><a href="blog.html">Blog</a></li>
-  
           <li class="has-dropdown">
-            <a href="#">Contact Us ▼</a>
+            <a href="#">Contact ▾</a>
             <ul class="dropdown">
-              <li><a href="index.html#contact">Visit Our Yard</a></li>
+              <li><a href="contact.html">Visit Our Yard</a></li>
               <li><a href="tel:+61469934580">Call: 0469 934 580</a></li>
-              <li><a href="mailto:nasirnajib1@gmail.com">Email Us</a></li>
             </ul>
           </li>
-  
-          <li><a href="tel:+61469934580" class="btn-primary-header">Call: 0469 934 580</a></li>
+          <li><a href="tel:+61469934580" class="btn-nav-cta">📞 0469 934 580</a></li>
         </ul>
       </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
   <main id="main-content">
-    <section class="hero" id="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="eyebrow">Auto Wrecking News & Tips</div>
-          <h1>Latest Articles From Melbourne's Wrecking Experts</h1>
-          <p class="sub">Discover how to get the most cash for your old car, find rare spare parts, and understand the recycling process. We update our blog regularly with helpful guides.</p>
-          <div class="badges">
-            <span class="badge" style="background:#fff; border-color:#e2e8f0; color:#166534;">✅ Expert Advice</span>
-            <span class="badge" style="background:#fff; border-color:#e2e8f0; color:#ea580c;">⭐ Selling Tips</span>
-            <span class="badge" style="background:#fff; border-color:#e2e8f0; color:#0f172a;">⚡ Parts Guides</span>
-          </div>
-        </div>
-
-        <div class="quote">
-          <h2>Get A Quote</h2>
-          <p class="hint hint-script">FREE VALUATION</p>
-          <form id="quote-form" novalidate>
-            <input type="text" name="_hp" id="_hp" style="position:absolute;left:-9999px;" tabindex="-1" autocomplete="off">
-            <fieldset class="grid">
-              <div>
-                <label for="name">Name *</label>
-                <input id="name" name="name" required autocomplete="name" />
-              </div>
-              <div>
-                <label for="mobile">Mobile *</label>
-                <input id="mobile" name="mobile" type="tel" required inputmode="tel" autocomplete="tel" placeholder="04xx xxx xxx" />
-              </div>
-              <div>
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" autocomplete="email" />
-              </div>
-              <div>
-                <label for="suburb">Suburb / Postcode *</label>
-                <input id="suburb" name="suburb" required />
-              </div>
-              <div>
-                <label for="car">Vehicle Details *</label>
-                <input id="car" name="car" required placeholder="Make, Model, Year" />
-              </div>
-            </fieldset>
-            <div>
-              <label for="notes">Notes</label>
-              <textarea id="notes" name="notes" rows="3" placeholder="Condition, mileage, issues..."></textarea>
-            </div>
-            <div class="actions">
-              <button class="btn btn-primary" type="submit" id="submitBtn">Get My Cash Offer</button>
-            </div>
-            <p id="formStatus" class="hint" role="status" aria-live="polite"></p>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-intro" style="background: #fff; padding-bottom: 40px;">
+    
+    <section class="blog-header">
       <div class="container">
-        <h2 style="margin-bottom: 30px;">Recent Posts</h2>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px;">
-          
-          <article style="border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
-            <div style="height: 200px; background-color: #cbd5e1; display: flex; align-items: center; justify-content: center; color: #64748b; font-weight: bold;">
-              [Car Image Placeholder]
+        <h1>Auto News & Wrecking Tips</h1>
+        <p>Read our latest articles on how to get the most cash for your unwanted cars, tips for eco-friendly auto recycling, and guides on buying genuine used parts in Victoria.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="blog-grid">
+
+          <article class="blog-card">
+            <div class="blog-img-box">
+              [PLACEHOLDER: Image of a hand giving cash to a car owner]
             </div>
-            <div style="padding: 25px;">
-              <div style="color: #ea580c; font-weight: 600; font-size: 0.875rem; margin-bottom: 10px;">Selling Guide</div>
-              <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 10px;">How to Sell a Car Without a Roadworthy in Victoria</h3>
-              <p style="color: #64748b; line-height: 1.6; margin-bottom: 20px;">Selling a car privately in Melbourne usually requires a RWC. Learn how selling to a wrecker allows you to bypass this expensive step legally.</p>
-              <a href="services/sell-my-car" class="btn btn-outline" style="width: 100%; text-align: center;">Read Article</a>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-category">Cash For Cars</span>
+                <span>Oct 12, 2024</span>
+              </div>
+              <h2>How to Get the Absolute Best Price for Your Scrap Car</h2>
+              <p>Thinking about sending your old vehicle to the wreckers? Learn the top factors that determine salvage value and how you can negotiate the best cash payout.</p>
+              <a href="#" class="read-more">Read Article →</a>
             </div>
           </article>
 
-          <article style="border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
-            <div style="height: 200px; background-color: #cbd5e1; display: flex; align-items: center; justify-content: center; color: #64748b; font-weight: bold;">
-              [4x4 Image Placeholder]
+          <article class="blog-card">
+            <div class="blog-img-box">
+              [PLACEHOLDER: Image of car fluids being drained safely]
             </div>
-            <div style="padding: 25px;">
-              <div style="color: #ea580c; font-weight: 600; font-size: 0.875rem; margin-bottom: 10px;">Vehicle Valuation</div>
-              <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 10px;">Why Toyota Hilux & LandCruisers Hold Their Value</h3>
-              <p style="color: #64748b; line-height: 1.6; margin-bottom: 20px;">Discover why these 4x4s command top dollar even when damaged or old, and how much you can expect to get for yours.</p>
-              <a href="carbrands/toyota" class="btn btn-outline" style="width: 100%; text-align: center;">Read Article</a>
-            </div>
-          </article>
-
-          <article style="border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
-            <div style="height: 200px; background-color: #cbd5e1; display: flex; align-items: center; justify-content: center; color: #64748b; font-weight: bold;">
-              [Engine Image Placeholder]
-            </div>
-            <div style="padding: 25px;">
-              <div style="color: #ea580c; font-weight: 600; font-size: 0.875rem; margin-bottom: 10px;">Parts & Repairs</div>
-              <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 10px;">Buying Used Engines: What to Look For</h3>
-              <p style="color: #64748b; line-height: 1.6; margin-bottom: 20px;">A guide to buying second-hand engines. Why verified mileage and warranty from a licensed wrecker matters.</p>
-              <a href="services/used-parts" class="btn btn-outline" style="width: 100%; text-align: center;">Read Article</a>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-category">Eco-Recycling</span>
+                <span>Oct 05, 2024</span>
+              </div>
+              <h2>Why Eco-Friendly Auto Recycling Matters in Victoria</h2>
+              <p>Old cars leak toxic oils and battery acids. Discover how our strict recycling protocols protect the local soil and waterways while repurposing heavy steel.</p>
+              <a href="#" class="read-more">Read Article →</a>
             </div>
           </article>
 
-          <article style="border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
-            <div style="height: 200px; background-color: #cbd5e1; display: flex; align-items: center; justify-content: center; color: #64748b; font-weight: bold;">
-              [Scrap Car Placeholder]
+          <article class="blog-card">
+            <div class="blog-img-box">
+              [PLACEHOLDER: Image of a car broken down on the side of a road]
             </div>
-            <div style="padding: 25px;">
-              <div style="color: #ea580c; font-weight: 600; font-size: 0.875rem; margin-bottom: 10px;">Recycling</div>
-              <h3 style="margin-top: 0; font-size: 1.25rem; margin-bottom: 10px;">What Happens to Your Car After It's Scrapped?</h3>
-              <p style="color: #64748b; line-height: 1.6; margin-bottom: 20px;">A behind-the-scenes look at the de-pollution and crushing process at our Dandenong South facility.</p>
-              <a href="services/recycling" class="btn btn-outline" style="width: 100%; text-align: center;">Read Article</a>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-category">Tips & Advice</span>
+                <span>Sep 28, 2024</span>
+              </div>
+              <h2>5 Signs It Is Finally Time to Sell Your Car to a Wrecker</h2>
+              <p>Is your mechanic bill higher than the value of your car? From blown head gaskets to severe rust, here are the clear signs it's time to call the wreckers.</p>
+              <a href="#" class="read-more">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-img-box">
+              [PLACEHOLDER: Image of a mechanic holding a genuine auto part]
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-category">Used Parts</span>
+                <span>Sep 15, 2024</span>
+              </div>
+              <h2>Genuine Used Parts vs. Aftermarket: What's the Difference?</h2>
+              <p>Don't risk cheap imitations. Learn why buying genuine recycled parts from an auto wrecker is safer, cheaper, and better for your vehicle's performance.</p>
+              <a href="#" class="read-more">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-img-box">
+              [PLACEHOLDER: Image of VicRoads paperwork]
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-category">Guides</span>
+                <span>Sep 02, 2024</span>
+              </div>
+              <h2>The Ultimate Guide to Selling an Unregistered Vehicle</h2>
+              <p>Selling a car without Rego or a Roadworthy Certificate (RWC) privately is difficult. Find out how easy it is to sell it directly to a licensed wrecker.</p>
+              <a href="#" class="read-more">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-img-box">
+              [PLACEHOLDER: Image of a scrap car in a crushing machine]
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-category">Behind The Scenes</span>
+                <span>Aug 20, 2024</span>
+              </div>
+              <h2>What Actually Happens to Your Car After It's Towed Away?</h2>
+              <p>Ever wondered where your car goes? Take a look behind the scenes of our Dandenong South yard to see the dismantling, draining, and crushing process.</p>
+              <a href="#" class="read-more">Read Article →</a>
             </div>
           </article>
 
@@ -291,74 +324,23 @@
       </div>
     </section>
 
-    <section id="contact" class="cta">
-      <div class="container cta-grid">
-        <div>
-          <h2>Have A Question?</h2>
-          <p>Our team is here to help with car removal and parts inquiries.</p>
-        </div>
-        <div class="cta-actions">
-          <a class="btn btn-primary" href="tel:+61469934580">Call 0469 934 580</a>
-          <a class="btn btn-outline" href="contact">Contact Us</a>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <footer class="big-footer">
+  <footer class="site-footer" id="contact">
     <div class="container footer-grid">
-      <div class="footer-col brand-col">
-        <a href="./" class="footer-brand">Victoria Used Parts</a>
-        <p>Melbourne's top-rated auto wreckers and parts recyclers. We pay top cash for unwanted vehicles and supply genuine second-hand parts to the public and trade.</p>
-        <div class="footer-badges">
-          <span class="badge-sm">LMCT Licensed</span>
-          <span class="badge-sm">Eco-Friendly</span>
-        </div>
-      </div>
-
       <div class="footer-col">
-        <h3>Our Services</h3>
-        <ul class="footer-links">
-          <li><a href="services/cash-for-cars">Cash for Cars</a></li>
-          <li><a href="services/scrap-car-removal">Car Removal</a></li>
-          <li><a href="services/cash-for-trucks">Truck Wreckers</a></li>
-          <li><a href="services/used-parts">Used Parts</a></li>
-        </ul>
+        <h3>Vic Cash 4 Cars</h3>
+        <p>Victoria's trusted cash-for-cars specialists — free towing, instant payment, any condition.</p>
       </div>
-
-      <div class="footer-col contact-col">
-        <h3>Contact Us</h3>
-        <p class="contact-item">
-          <strong>Phone:</strong><br>
-          <a href="tel:+61469934580" class="phone-link">0469 934 580</a>
-        </p>
-        <p class="contact-item">
-          <strong>Email:</strong><br>
-          <a href="mailto:sales@victoriausedparts.com.au">sales@victoriausedparts.com.au</a>
-        </p>
-        <p class="contact-item">
-          <strong>Yard Address:</strong><br>
-          1 Maxwell St, Dandenong South VIC 3175
-        </p>
-        <div class="footer-map">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.476655785669!2d145.2166620762973!3d-38.00125147192891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad61176e4904fa9%3A0x77d1d6a7833f9c6d!2s1%20Maxwell%20St%2C%20Dandenong%20South%20VIC%203175%2C%20Australia!5e0!3m2!1sen!2sau!4v1705891200000!5m2!1sen!2sau" 
-            width="100%" 
-            height="100%" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p><strong>Phone:</strong> <a href="tel:+61469934580">0469 934 580</a></p>
+        <p><strong>Email:</strong> <a href="mailto:nasirnajib1@gmail.com">nasirnajib1@gmail.com</a></p>
+        <p><strong>Address:</strong> 1 Maxwell St, Dandenong South VIC 3175</p>
       </div>
-    </div> 
-    <div class="footer-bottom">
-      <div class="container bottom-flex">
-        <p>© <span id="year"></span> Victoria Used Parts PTY LTD. ABN 68 690 358 297.</p>
-        <p class="legal-links">
-          <a href="privacy">Privacy Policy</a> | <a href="terms">Terms of Service</a>
-        </p>
+      <div class="footer-col">
+        <h3>Find Us</h3>
+        <iframe title="Vic Cash 4 Cars location" src="https://www.google.com/maps?q=1%20Maxwell%20St,%20Dandenong%20South%20VIC%203175&output=embed" width="100%" height="200" style="border:0;border-radius:8px"></iframe>
       </div>
     </div>
   </footer>
