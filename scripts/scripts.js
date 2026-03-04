@@ -276,31 +276,35 @@
 
 })();
 document.addEventListener("DOMContentLoaded", function() {
-  // Find all our special double-tap links
   var doubleTapLinks = document.querySelectorAll('.double-tap-link');
   
   doubleTapLinks.forEach(function(link) {
     link.addEventListener('click', function(e) {
+      var parentLi = this.parentElement;
       
-      // We only want this double-click logic on Mobile devices
-      if (window.innerWidth <= 991) {
-        var parentLi = this.parentElement;
+      // If the dropdown is NOT open yet, stop the link from changing the page and open the menu
+      if (!parentLi.classList.contains('open')) {
+        e.preventDefault(); 
         
-        // If the nested menu is NOT open yet:
-        if (!parentLi.classList.contains('open')) {
-          e.preventDefault(); // Stop the link from taking us to the new page
-          
-          // Close any other open nested menus to keep it neat
-          document.querySelectorAll('.has-nested-dropdown').forEach(function(li) {
-            li.classList.remove('open');
-          });
-          
-          // Open this specific nested menu
-          parentLi.classList.add('open');
-        }
-        // If the menu IS already open, do nothing! 
-        // The browser will naturally follow the link to "cash-for-cars.html"
+        // Close any other open nested menus to keep things tidy
+        document.querySelectorAll('.has-nested-dropdown.open').forEach(function(li) {
+          if (li !== parentLi) li.classList.remove('open');
+        });
+        
+        // Open this menu
+        parentLi.classList.add('open');
       }
+      // If it IS already open, the script does nothing, and the browser naturally goes to the page!
     });
   });
+
+  // Clean up nested menus if the user moves their mouse away entirely (Desktop)
+  var mainServicesMenu = document.querySelector('.has-dropdown');
+  if(mainServicesMenu) {
+    mainServicesMenu.addEventListener('mouseleave', function() {
+      document.querySelectorAll('.has-nested-dropdown.open').forEach(function(li) {
+        li.classList.remove('open');
+      });
+    });
+  }
 });
