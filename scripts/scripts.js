@@ -134,7 +134,7 @@
        ============================================================ */
        var CORE_PAGES = new Set([
         '', 'index', 'blog', 'contact',
-        'cash for cars', 'sell my car', 'car valuation',
+        'cash for cars', 'sell my car', 'car removal',
         'cash for old cars', 'scrap car removal', 'free towing',
         'junk car collection', 'accident car removal', 'auto wreckers',
         'commercial wreckers', 'used parts', 'recycling',
