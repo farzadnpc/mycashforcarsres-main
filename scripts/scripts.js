@@ -133,12 +133,16 @@
        Populates suburb field from URL slug on location pages.
        ============================================================ */
        var CORE_PAGES = new Set([
-        '', 'index', 'blog', 'contact',
-        'cash for cars', 'sell my car', 'car removal',
+        '', 'index', 'blog', 'contact', 'sitemap',
+        'cash for cars', 'sell my car', 'car valuation',
         'cash for old cars', 'scrap car removal', 'free towing',
         'junk car collection', 'accident car removal', 'auto wreckers',
         'commercial wreckers', 'used parts', 'recycling',
         'cash for trucks', 'cash for vans', '4x4 wreckers', 'ute wreckers',
+        'car removal', 'truck removal', 'truck wreckers',
+        'isuzu wreckers', 'hino wreckers', 'ford truck wreckers', 
+        'mitsubishi truck wreckers', 'nissan truck wreckers', 
+        'mercedes truck wreckers', 'volvo truck wreckers',
         
         // CAR BRANDS ADDED HERE SO THEY DO NOT AUTO-FILL THE SUBURB FIELD
         'toyota', 'suzuki', 'honda', 'hyundai', 'proton', 'volvo', 'saab',
